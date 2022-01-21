@@ -1,0 +1,44 @@
+/* NAVIGATION  */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+}
+#home{
+    height:  306px;
+    padding: 0rem 3rem;
+}
+#home::before{
+    height: 480px;
+}
+#home p{
+    font-size: 1rem;
+}
+.h-primary{
+    font-size: 26px;
+    text-align: left;
+}
+
+
+
+
+
+#services {
+    flex-direction: column;
+}
+.h1-primary{
+    flex-direction: column;
+
+}
+#services .box{
+    display: flex;
+    flex-direction: column;
+}
+#services .box2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    transform: translateX(50%);
+}

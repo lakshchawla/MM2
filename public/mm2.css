@@ -1,0 +1,631 @@
+/* css reset  */
+*{
+    margin: 0rem;
+    padding: 0rem;
+}
+body{
+    overflow-x: hidden;
+}
+ @media(max-width: 130rem)
+{
+    /* html{
+        font-size: 55%;
+    } */
+    /* #navbar ul{
+        font-size: 20%;
+    } */
+    #logo img{
+        height: 3%;
+
+    }
+    #navbar ul li{
+        font-size: 5%;
+    }
+    #navbar::before{
+        font-size: 20%;
+    }
+}
+/* @media(max-width: 768rem)
+{
+    html{
+        font-size: 45%;
+    }
+}  */
+
+/* css variables  */
+:root{
+    --navbar-height:1rem;
+}
+/* navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    padding: 0rem;
+} 
+#navbar::before{
+    content: "";
+    background-color:rgb(75, 112, 175);
+    border-radius: 1.2rem;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/*nav Logo and image  */
+#logo{
+    margin: 0.4rem 0.45rem;
+}
+#logo img{
+    margin: -3px 1px;
+    height: 80px;
+    border-radius: 5rem;
+}
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    text-decoration: underline;
+    text-shadow: 0.1rem 0.1rem blue;
+}
+
+#Nav .right{
+    float: right;
+    position: relative;
+    right: -60rem;
+}
+
+/* Home section edit */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 20rem;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background-color:rgb(113, 190, 190);
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    position: absolute;
+    height: 97%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+#home h1{
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+
+}
+#home p{
+    color: black;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.searchbox{
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    z-index: -1;
+    margin: 0.35rem 0.5rem;
+}
+.search-field{
+    height: 1.5rem;
+    padding:1rem;
+    border:none;
+    border-radius: 1.5rem;
+    outline: none;
+}
+.formbox .in1{
+    height: 45px;
+    width: 300px ;
+    padding: 0px 10px;
+    font-size: 100%;
+    border-radius: 30px;
+}
+.formbox .in2{
+    height: 45px;
+    width: 100px ;
+    border-radius: 30px;
+}
+.formbox .in2:hover{
+    background-color: black;
+    color: white;
+}
+/* .business{
+    width: 30rem;
+}
+.location{
+    width: 15rem;
+} */
+.search-button{
+    height: 3rem;
+    width: 8rem;
+    background:cadetblue;
+    border: none;
+    color: black;
+    border-radius: 3rem;
+}
+.search-button:hover{
+    background:black;
+    cursor: pointer;
+    color: cadetblue;
+}
+.formbox{
+    background:cadetblue;
+    /* opacity: 0.4; */
+    padding:1rem;
+    border-radius: 5rem;
+    margin: 23px 53px;
+
+}
+
+/* Companies section  */
+#companies{
+    margin: 0.2rem;
+    display: flex;
+    position: relative;
+    left: 15rem;
+    width: 90%;
+}
+#companies .box{
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    width: 15rem;
+    background:whitesmoke;
+    box-shadow: 0.5rem 0.4rem rgb(148, 148, 148);
+}
+#companies-container .block{
+    padding: 1.8rem;
+    margin: 1rem;
+    align-self: center;
+    position: relative;
+    /* left: 2rem; */
+    top: 3rem;
+    width: 70%;
+    /* border: 2px solid black; */
+}
+#companies .box:hover{
+    box-shadow: 0.6rem 1.5rem 0.8rem rgb(145, 190, 61);
+}
+#companies .box img {
+    height: 5rem;
+    margin: auto;
+    display: block;
+}
+#companies .box p{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+#companies-container::before{
+    content: "";
+    background-color:rgb(113, 190, 190);
+    border-radius: 45rem;
+    position: absolute;
+    bottom: 45%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;   
+}
+.logo{
+    width: 100%;
+    float: left;
+}
+a{
+    text-decoration: none;
+}
+.sub-review{
+    color: gray;
+}
+
+
+/* Utility Class */
+.h-primary{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 4rem;
+    padding: 1rem;
+    text-align: center;
+} 
+.h11-primary{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 3rem;
+    padding: 1rem;
+    position: relative;
+    top: 1rem;
+    transform: translateX(350px);
+}  
+.h1-primary{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem;
+    position: relative;
+    top: 5rem;
+    transform: translateX(500px);
+}
+.h-secondary{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+/* Content1 */
+.Heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bolder;
+    font-weight: 400;
+    line-height: 5.7in;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Our services */
+#services{
+    margin: 0.2rem;
+    margin-top: 5rem;
+    display: block;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 3rem;
+    position: center;
+    /* border: 2px solid black; */
+}
+#Services .blockmain{
+    margin: 5%;
+    width: 100%;
+    align-self: center;
+    border: none;
+    /* border: 2px solid rgb(224, 18, 179); */
+}
+#services .servebox{
+    padding: 2rem;
+    margin: 1rem;
+    transform: translateX(-196px);
+    /* border: 2px solid rgb(4, 22, 83); */
+}
+#services .box{
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    width: 8rem;
+    height: 7rem;
+    background:whitesmoke;
+    box-shadow: 0.7rem 0.9rem rgb(240, 172, 169);
+    display: flex;
+}
+#services .box:hover{
+    box-shadow: 0.7rem 1.5rem 1rem rgb(241, 118, 96);
+}
+#services .h2-secondary{
+    align-items: left;
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+.low{
+    text-align:right;
+    font-size: 1rem;
+    float: bottom;
+}
+#services .box2{
+    display: flex;
+    border: none;
+    margin: 1rem;
+    position: relative;
+    left: 17rem;
+    /* border: 2px solid rgb(214, 76, 12); */
+}
+#services .h1-primary{
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        font-size: 3rem;
+        justify-content: center;
+        align-items: center;
+        padding: 0.1rem;
+        position: relative;
+        top: 1.2rem;
+        transform: translateX(500px);
+}
+.sub-review{
+    font-size: 0.8rem;    
+}
+.servebox{
+    display: flex;
+}
+.image{
+    left: 17%;
+    width: 12%;
+    position: absolute;
+}
+#services .below{
+    width: 13rem;
+    position: relative;
+    top: 10rem;
+    left: 19rem;
+    border: none;
+    margin: 0.2rem;
+}
+
+
+/* Grow */
+#Grow .Box1:hover{
+    box-shadow: 0.7rem 1.5rem 1rem rgb(247, 138, 119);
+}
+#Grow .Blockmain{
+    padding: 2rem;
+    margin: 3rem;
+    margin-top: 10rem;
+    align-self: center;
+    display: flex;
+    /* border: 2px solid black; */
+}
+
+#Grow .h2-grow{
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 2rem;
+}
+.icon{
+    width: 20rem;
+    position: relative;
+    top: 0.1rem;
+    left: 0.1rem;
+}
+#Grow .Highlight{
+    padding: 20px;
+    margin: 0.5rem 0.2rem;
+    border-radius: 2rem;
+    width: 60rem;
+    height: 20rem;
+    /* border: 1.5rem solid rgb(250, 242, 227); */
+    background:rgb(243, 223, 223);
+    display: flex;
+}
+#Grow .Box1{
+    padding: 2rem;
+    margin: 0.5rem 0.2rem;
+    margin-left: 2%;
+    border-radius: 20px;
+    width: 20rem;
+    background:whitesmoke;
+    border:0.1rem solid rgb(241, 184, 184);
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1.2rem;
+} 
+#Grow .left1{
+    position: relative;
+    left: 0.2rem;
+    top: 0.2rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1.5rem;
+    font: bolder;
+}
+#Grow .sub{
+    position: relative;
+    top: 0.2rem;
+    font-size: 1rem;
+}
+#Grow .sub2{
+    left: 1rem;
+    position: relative;
+    top: 0.2rem;
+    font-size: 0.8rem;
+    line-height: 1.7;
+}
+#Grow .block{
+    padding: 0.2rem;
+    display: inline-block;
+    /* border: 1px solid #000000; */
+    border-radius: 4px;
+    font-weight: 300;
+    font-size: 0.6rem;
+    position: relative;
+    top: -30px;
+}
+.block2{
+    padding: 0.2rem;
+    display: inline-block;
+    /* border: 1px solid #000000; */
+    border-radius: 4px;
+    font-weight: 150;
+    font-size: 0.6rem;
+    position: relative;
+    top: -30px;  
+}
+
+/* Accelerate */
+#Accelerate{
+    padding: 2rem;
+    margin: 4rem;
+    margin-left: 17rem;
+    margin-top: 13rem;
+    align-self: center;
+    display: flex;
+    align-self: center;
+    display: flex;
+}
+.h2-grow{
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 2rem;
+    font: bolder;
+    left: 1px;
+}
+
+.head{
+    font:x-large;
+    font: bolder;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.text{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1.2rem;
+}
+
+.icon2{
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+}
+
+.button {
+    display:-ms-flexbox;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #eeb3a4;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.button2 {
+    padding: 0.8rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    background-color: #1317f3;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.right{
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    font-weight: 300;
+    margin: 0.1rem;
+    text-align: right;
+    margin-top: inherit;
+}
+
+.rightText{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1rem;
+}
+
+/* Second Last */
+#Secondlast{
+       margin: 6rem;
+    padding: 2.1rem;
+    font-weight: 200;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1rem;
+    border-radius: 5rem;
+    border: 0.1rem solid rgb(140, 228, 240); 
+    background-color: rgb(198, 236, 241);   
+    position: relative;
+}
+
+.Blockmain{
+    padding-top: 1rem;
+    margin: 2%;
+    margin-left: 15%;
+    width: 80%;
+    align-self: center;
+}
+
+.h2-grow2{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 2rem;
+    font:bolder ;
+    text-align: left;
+    position: relative;
+    top: 0.2rem;
+}
+
+.text1{
+    position: relative;
+    top: 1rem;
+    font-size: 1.5rem;
+}
+
+.num{
+    position: relative;
+    top: 2rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1rem;
+}
+.button3 {
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    border-radius: 40px;
+    background-color: #1317f3;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+}
+.linked{
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    position: relative;
+    top: 3rem;
+}
+.img{
+    float: right;
+    width: 45rem;
+    position: relative;
+    top: -15rem;
+    right: -1rem;
+}
+
+/* Footer Box */
+#footer .box{
+    float:left;
+    padding: 1.7rem;
+    margin: 0.2rem;
+    border-radius: 20px;
+    width: 17rem;
+    border: 2px solid black;
+    display: flex;
+}
+#footer .type1{
+    font-size: 1rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    display: flex;
+    transform: translateY(110px);
+}
+
+#footer .type2{
+    font-size: 1.25rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+#footer .type3{
+    font-size: 1rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    display: flex;
+}
+#footer img{
+    border-radius: 1rem;
+    height: 3rem;
+}
